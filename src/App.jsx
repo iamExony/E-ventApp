@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import React from "react";
-import Home from "./pages/Home/Home";
+/* import Home from "./pages/Home/Home";
 import Root from "./root/Root";
 import DashboardRoot from "./dashboard/DashboardRoot";
 import ForEvents from "./pages/ForEvent/ForEvents";
@@ -18,9 +18,9 @@ import Prospects from "./dashboard/eventSource/prospects/Prospect";
 import Eventsource from "./dashboard/eventSource/Eventsource";
 import AllProspects from "./dashboard/eventSource/prospects/pages/AllProspects";
 import AddProspects from "./dashboard/eventSource/prospects/pages/AddProspect";
-
+ */
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import AllOffers from "./dashboard/eventSource/offers/pages/AllOffers";
+/* import AllOffers from "./dashboard/eventSource/offers/pages/AllOffers";
 
 import AddOffers from "./dashboard/eventSource/offers/pages/AddOffers";
 
@@ -29,20 +29,20 @@ import AllContracts from "./dashboard/eventSource/contractsPages/pages/AllContra
 import AddContracts from "./dashboard/eventSource/contractsPages/pages/AddContracts";
 
 import Events from "./dashboard/planner/events/Events";
-import AddEvents from "./dashboard/planner/events/pages/AddEvents";
+import AddEvents from "./dashboard/planner/events/pages/AddEvents"; */
 // import AllEvents from "./dashboard/planner/events/pages/AllEvents";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import Auth from "./pages/Auth/Auth";
+/* import Auth from "./pages/Auth/Auth";
 import { action as authAction } from "./pages/Auth/Auth";
 import { action as logoutAction } from "./pages/Auth/Logout";
 
 import { action as searchAction } from "./pages/Search/Search";
-
+ */
 // import ErrorPage from "./pages/Auth/Errorpage";
-import { checkAuthLoader, tokenLoader } from "./utils/Auth";
+/* import { checkAuthLoader, tokenLoader } from "./utils/Auth"; */
 
 /* import Payments from "./dashboard/planner/payments/Payments"; */
-import AddPayment from "./dashboard/planner/payments/AddPayment";
+/* import AddPayment from "./dashboard/planner/payments/AddPayment";
 import AllPayments from "./dashboard/planner/payments/AllPayments";
 import HomeRoot from "./pages/HomeRoot";
 import Search from "./pages/Search/Search";
@@ -54,17 +54,17 @@ import ProspectInfo from "./dashboard/eventSource/prospects/pages/ProspectInfo";
 import ForPersonnel from "./pages/forPersonnel/ForPersonnel";
 import PersonnelJobDescription from "./pages/forPersonnel/PersonnelJobDescription";
 import Marketplace from "./dashboard/eventSource/marketplace/Marketplace";
-import Webpage from "./dashboard/eventSource/marketplace/pages/Webpage";
+import Webpage from "./dashboard/eventSource/marketplace/pages/Webpage"; */
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import ProfileSettings from "./dashboard/ProfileSettings";
+/* import ProfileSettings from "./dashboard/ProfileSettings";
 import Subscriptions from "./dashboard/Subscription";
 
 import OfferInfo from "./dashboard/eventSource/offers/pages/OfferInfo";
 import useCheckTokenExpiration from "./hooks/useCheckTokenExpiration";
 import ContractInfo from "./dashboard/eventSource/contractsPages/pages/ContractInfo";
 import PaymentInfo from "./dashboard/planner/Payments/pages/PaymentInfo";
-import Crm from "./dashboard/crm/Crm";
+import Crm from "./dashboard/crm/Crm"; */
 
 
 const theme = createTheme({
@@ -73,7 +73,7 @@ const theme = createTheme({
   },
 });
 
-const router = createBrowserRouter([
+/* const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
@@ -116,7 +116,7 @@ const router = createBrowserRouter([
         loader: checkAuthLoader,
         action: authAction,
         children: [
-          { index: true, path: "dashboard", element: <Dashboard /> },
+          { index: true, path: "/dashboard", element: <Dashboard /> },
           {path: "settings", element: <ProfileSettings />},
           {path: "subscriptions", element: <Subscriptions />},
           {
@@ -151,7 +151,7 @@ const router = createBrowserRouter([
             path: "events/all-events",
             element: <AllEvents />,
           },
-          /* { path: "payments", element: <Payments /> }, */
+           { path: "payments", element: <Payments /> }, 
           { path: "payments/add-payments", element: <AddPayment /> },
           { path: "payments/all-payments", element: <AllPayments /> },
           { path: "payments/payment-info/:id", element: <PaymentInfo /> },
@@ -165,7 +165,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+]); */
 const queryClient = new QueryClient();
 const ReactQueryDevtoolsProduction = React.lazy(() =>
   import("@tanstack/react-query-devtools/build/modern/production.js").then(
