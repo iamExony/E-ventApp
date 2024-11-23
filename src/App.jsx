@@ -40,9 +40,6 @@ import { action as searchAction } from "./pages/Search/Search";
 
 // import ErrorPage from "./pages/Auth/Errorpage";
 import { checkAuthLoader, tokenLoader } from "./utils/Auth";
-
-import AddPayment from "./dashboard/planner/payments/AddPayment";
-import AllPayments from "./dashboard/planner/payments/AllPayments";
 import HomeRoot from "./pages/HomeRoot";
 import Search from "./pages/Search/Search";
 import Entrypass from "./dashboard/planner/entrypass/Entrypass";
@@ -150,11 +147,6 @@ const router = createBrowserRouter([
             path: "events/all-events",
             element: <AllEvents />,
           },
-
-          { path: "payments/add-payments", element: <AddPayment /> },
-          { path: "payments/all-payments", element: <AllPayments /> },
-          { path: "payments/payment-info/:id", element: <PaymentInfo /> },
-
           { path: "entrypass", element: <Entrypass /> },
           { path: "entrypass/all-entrypass", element: <AllEntry /> },
           { path: "entrypass/add-entrypass", element: <AddEntry /> },
