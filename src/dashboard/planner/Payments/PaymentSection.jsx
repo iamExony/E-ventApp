@@ -3,7 +3,7 @@ import AreaChart from '../../components/AreaCharts'
 import DropdownMenu from '../../components/ButtonDropdown'
 import RecentActivities from '../../components/RecentActivities'
 
-const Payments = () => {
+const PaymentsSection = () => {
   const payments = [
     {
       percent: null,
@@ -48,4 +48,4 @@ const Payments = () => {
   );
 }
 
-export default Payments
+export default PaymentsSection
