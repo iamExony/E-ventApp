@@ -41,7 +41,7 @@ import { action as searchAction } from "./pages/Search/Search";
 // import ErrorPage from "./pages/Auth/Errorpage";
 import { checkAuthLoader, tokenLoader } from "./utils/Auth";
 
-import PaymentsSection from "./dashboard/planner/payments/PaymentSection";
+import PaymentsSection from "./dashboard/planner/Payments/PaymentsSection";
 import AddPayment from "./dashboard/planner/payments/AddPayment";
 import AllPayments from "./dashboard/planner/payments/AllPayments";
 import HomeRoot from "./pages/HomeRoot";
